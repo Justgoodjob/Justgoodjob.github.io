@@ -14,10 +14,17 @@
             margin: 0;
             /* Set the background video and adjust properties */
             position: relative;
-            background: url('background-video.mp4'); /* Replace with your video file */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            overflow: hidden; /* Hide overflowing video */
+        }
+
+        /* Set the video as a background */
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -1;
         }
 
         h1 {
