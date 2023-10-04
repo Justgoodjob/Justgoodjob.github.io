@@ -61,7 +61,7 @@
     </style>
 </head>
 <body>
-    <button class="return-button" onclick="goBack()">Return</button>
+    <button class="return-button" onclick="goToIndex()">Return to Home</button>
     <h1>Choose a Beach</h1>
     <ul>
         <li><button onclick="enterBeach('playa1')">Atlantic Ocean</button></li>
@@ -74,9 +74,9 @@
             window.location.href = beachName + ".html";
         }
 
-        function goBack() {
-            // Navigate back to the previous page (if possible)
-            window.history.back();
+        function goToIndex() {
+            // Redirect to the index.html page
+            window.location.href = "index.html";
         }
     </script>
 </body>
