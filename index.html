@@ -50,6 +50,25 @@
             margin-top: 10px;
             border-radius: 15px; /* Add rounded corners */
         }
+
+        /* Style for the Instagram button */
+        .instagram-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #bc2a8d; /* Instagram's brand color */
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .instagram-button:hover {
+            background-color: #8a1675; /* Darker shade on hover */
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -81,6 +100,9 @@
         <option value="Australia">🇦🇺 Australia</option>
         <!-- Add more countries as needed with their corresponding names -->
     </datalist>
+    
+    <!-- Instagram button -->
+    <a class="instagram-button" href="https://www.instagram.com/syn.require">Instagram (follow me plz)</a>
 
     <script>
         function checkEnter(event) {
