@@ -1,1 +1,20 @@
-SHOW LIST OF BEACHES
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose a Beach</title>
+</head>
+<body>
+    <h1>Choose a Beach</h1>
+    <ul>
+        <li><button onclick="enterBeach('playa1')">Atlantic Ocean</button></li>
+        <!-- Add more beaches and buttons as needed -->
+    </ul>
+
+    <script>
+        function enterBeach(beachName) {
+            // Redirect to the selected beach's HTML page
+            window.location.href = beachName + ".html";
+        }
+    </script>
+</body>
+</html>
