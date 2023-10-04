@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #F1A73B;
+            background-color: #f7f7f7;
             margin: 0;
             padding: 0;
         }
@@ -40,9 +40,28 @@
             background-color: #2980b9;
             transform: scale(1.1);
         }
+
+        .return-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .return-button:hover {
+            background-color: #c0392b;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
+    <button class="return-button" onclick="goBack()">Return</button>
     <h1>Choose a Beach</h1>
     <ul>
         <li><button onclick="enterBeach('playa1')">Atlantic Ocean</button></li>
@@ -53,6 +72,11 @@
         function enterBeach(beachName) {
             // Redirect to the selected beach's HTML page
             window.location.href = beachName + ".html";
+        }
+
+        function goBack() {
+            // Navigate back to the previous page (if possible)
+            window.history.back();
         }
     </script>
 </body>
