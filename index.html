@@ -22,22 +22,23 @@
             position: absolute;
             top: 0;
             left: 0;
-            min-width: 100%;
+            min-width: 100%; 
             min-height: 100%;
             z-index: -1;
         }
 
         h1 {
             text-align: center;
-            margin-top: 45px;
+            margin-top: 50px; /* Lower the text */
             font-size: 65px;
             /* Use the Google Font as the font-family for the title */
             font-family: 'Fira Sans', sans-serif;
-            text-transform: uppercase; /* Convert text to uppercase */
-            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
-            color: #fff; /* Text color */
-            letter-spacing: 3px; /* Adjust letter spacing */
-            transform: skewY(-5deg); /* Apply skew transform */
+            padding: 20px; /* Add padding to create space for the border */
+            border: 5px solid white; /* Add a white border around the text */
+            background-color: rgba(255, 255, 255, 0.7); /* Add semi-transparent white background */
+            color: #ffcc00; /* Yellow text color */
+            font-weight: bold; /* Bold text */
+            text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.5); /* Add a yellow glow */
         }
 
         label {
