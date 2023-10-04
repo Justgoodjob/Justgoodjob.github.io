@@ -48,9 +48,29 @@
             font-weight: bold; /* Bold text */
             font-size: 45px; /* Adjust the font size */
         }
+
+        /* Style for the return button */
+        .return-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .return-button:hover {
+            background-color: #c0392b;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
+    <button class="return-button" onclick="goBack()">Return</button>
     <div class="left-side">
         <!-- Your content for the left side goes here -->
         <h1>Mizu Alert Report</h1>
@@ -72,4 +92,12 @@
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </div>
+
+    <script>
+        function goBack() {
+            // Navigate back to the previous page (if possible)
+            window.history.back();
+        }
+    </script>
 </body>
+</html>
